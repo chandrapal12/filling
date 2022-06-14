@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Animation | HTML & CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+       *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Fredoka One', cursive;
+        }
+        .html{
+            font-size:65.5%;
+        }
+        .text-center{
+            width:100vw;
+            height:100vh;
+            background-color:#082032;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        h1{
+            color:#082032;
+            -webkit-text-stroke: 0.001rem white;
+            font-size:3rem;
+            text-transform:uppercase;
+            position:relative;
+        }
+        h1::before{
+            content:"creativity...";
+            color:#0fc2b9;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            width:100%;
+            /* border-right:.2rem solid #0fc2b9; */
+            animation:slide 4s linear  infinite;
+            overflow:hidden;
+        }
+        @keyframes slide {
+            0%{
+                width:0%;
+            }
+            50%{
+                width:100%;
+            }
+            100%{
+                width:0%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="text-center">
+    <h1>creativity...</h1>
+</div>
+</body>
+</html>
